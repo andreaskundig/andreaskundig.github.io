@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html id="html" lang="fr-ch">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>bouboucle à bdfil</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.40.2" />
+    <style type="text/css">
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+        margin: 0;
+        padding: 0;
+    }
+    * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+    :before, :after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+    img, object, embed {max-width: 100%; height: auto;}
+    object, embed {height: 100%;}
+    img { margin: 1.25% 0; -ms-interpolation-mode: bicubic; }
+    html {
+        background-color: #F0F1F3;
+        padding: 2%;
+    }
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: #242424;
+        max-width: 800px;
+        margin: 5% auto;
+       
+    }
+    body::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    header {
+        margin-bottom: 8%;
+    }
+    footer {
+        text-align: center;
+    }
+    h1, h2, h3, h4, h5, h1 a {
+        color: #263A48;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    h1, h2 {
+        font-size: 36px;
+        padding-bottom: 0.3em;
+        margin-bottom: 0.4em;
+        border-bottom: 1px solid #eee
+    }
+    h2 {
+        font-size: 22px;
+        padding-bottom: 0.6em;
+        margin-bottom: 0.6em;
+        margin-top: 2.5em;
+    }
+    h3 {
+        font-size: 18px;
+        margin-bottom: 0.3em;
+    }
+    h1 small a {
+        color: #98999C;
+        font-size: 15px;
+        font-weight: normal;
+        float: right;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    section {
+        background: #fff;
+        margin-bottom: 1%;
+        position: relative;
+        padding: 6% 8%;
+    }
+    blockquote {
+        border-left: 3px solid #d54e21;
+        font-size: 16px;
+        padding: 0 0 0 20px;
+        color: #d54e21;
+    }
+    blockquote a {
+        color: #d54e21;
+        font-weight: 500;
+    }
+    blockquote code {
+        color: #d54e21;
+    }
+    code, cite {
+        background-color: #F0F2F4;
+        border-radius: 3px;
+        color: #000;
+        font: monospace;
+        padding: 2px 7px;
+    }
+    a {
+        color: #1e8cbe;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #d54e21;
+    }
+    ul {
+        list-style: none;
+    }
+    ol {
+        list-style: number;
+    }
+    ol li {
+        color: #98999C;
+        margin-bottom: 5px;
+    }
+    ol li:last-child {
+        margin-bottom: 0;
+    }
+    p, ul, ol, blockquote  {
+        margin-bottom: 4%;
+    }
+    ul ul {
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 4%;
+    }
+    ul ul li:before {
+        content: '-';
+        display: inline-block;
+        padding-right: 2%;
+    }
+
+    ul.col-2 {
+        color: #98999C;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+    @media screen and (min-width: 500px) {
+        ul.col-2 {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+    }
+    nav {
+        background: #F0F1F3;
+        min-width: 215px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    nav:first-of-type a {
+        color: #d54e21;
+        border-radius: 0;
+    }
+    nav:first-of-type a:hover {
+        color: #d54e21;
+    }
+    nav:first-of-type a:before {
+        background-color: #d54e21;
+    }
+    nav.affix {
+        position: fixed;
+        top: 20px;
+    }
+    nav.affix-bottom {
+        position: absolute;
+    }
+    nav a {
+        border-radius: 3px;
+        font-size: 15px;
+        display: block;
+        cursor: pointer;
+        font-weight: 500;
+        position: relative;
+        text-decoration: none; 
+        padding: 10px 12px;
+        width: 100%;
+        padding-right: 3px;
+        border-bottom: 2px solid #fff;
+    }
+    nav a:before {
+        content: '';
+        width: 4px;
+        display: block;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        display: none;
+        background: #1e8cbe;
+        top: 0;
+    }
+    nav a:hover {
+        background-color: #E6E8EA;
+        color: #1e8cbe;
+        text-decoration: underline;
+    }   
+    nav a:hover:before {
+        display: block;
+    }
+    nav a:last-of-type {
+        border-bottom: none;
+    }
+    .gist {
+        margin-top: 5.1%;
+        margin-bottom: 5%;
+    }
+    @media screen and (max-width: 1050px) {
+        body {
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        header span {
+            display: none;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }   
+    @media screen and (max-width: 514px) {
+        p, ul, ol, blockquote  {
+            margin-bottom: 8%;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <section id="Menu">
+        <header>
+            <h1>bouboucle à bdfil</h1>
+            <p></p>
+        </header>
+        <nav>
+        
+        </nav>
+        <nav>
+        
+            <a href="#description">Description pour le programme</a>
+        
+            <a href="#installation">Installation pour dessiner sur des tablettes</a>
+        
+            <a href="#expo">Exposition</a>
+        
+            <a href="#musique">Eventuelles possibilités musicales</a>
+        
+        </nav>
+    </section>
+
+    
+
+    <section id="description">
+
+        <h1><a href="#description">Description pour le programme</a><small><a href="#html">Back to Top</a></small></h1>
+
+        Bouboucle est une application pour dessiner des traits qui bougent d&rsquo;une manière simple et plutôt ludique, mais trop contraignante pour faire des animations conventionnelles. Aucun rapport avec la bande dessinée si nous n&rsquo;avions pas rpis soit d&rsquo;inclure une galerie de bouboucles soigneusement réalisées spécialement pour le festival notamment par des dessinateurs de bandes. Une installation invite en outre les visiteurs à dessiner leurs propres bouboucles et leur permet de les ajouter à l&rsquo;exposition. Bouboucle est aussi disponible en ligne à <a href="http://bouboucle.com">http://bouboucle.com</a>. C&rsquo;est un projet d&rsquo;Andréas Kündig et Ivan Gulizia.
+
+    </section>
+
+    
+
+    <section id="installation">
+
+        <h1><a href="#installation">Installation pour dessiner sur des tablettes</a><small><a href="#html">Back to Top</a></small></h1>
+
+        <p>L&rsquo;écran affiche les animations que les visiteurs sont en train de dessiner sur les tablettes. Quand personne ne dessine, une série d&rsquo;animations choisies passe en boucle. Les visiteurs peuvent choisir d&rsquo;ajouter leur animation à la série qui passe en boucle.</p>
+
+<p>A animatou, les tablettes étaient dans des socles.
+<img src="animatou14-p.png" alt="" /></p>
+
+<p>A la villa Bernasconi, les tablettes étaient dans des planches.
+<img src="bernasconi-p.jpg" alt="" /></p>
+
+<h2 id="mode-d-emploi">Mode d&rsquo;emploi</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><img src="1_couleur+2_taille_5.svg" style="width:50px"></td>
+<td>couleur du trait</td>
+</tr>
+
+<tr>
+<td><img src="2_taille_3.svg" style="width:50px"></td>
+<td>épaisseur du trait</td>
+</tr>
+
+<tr>
+<td><img src="3_trait_3.svg" style="width:50px"></td>
+<td>durée de vie et rythme du trait</td>
+</tr>
+
+<tr>
+<td><img src="4_erase.svg" style="width:50px"></td>
+<td>effacer tout</td>
+</tr>
+
+<tr>
+<td><img src="7_undo.svg" style="width:50px"></td>
+<td>défaire</td>
+</tr>
+
+<tr>
+<td><img src="5_redo.svg" style="width:50px"></td>
+<td>refaire</td>
+</tr>
+
+<tr>
+<td><img src="6_pause.svg" style="width:50px"> <img src="6_play.svg" style="width:50px"></td>
+<td>pause / play</td>
+</tr>
+
+<tr>
+<td><img src="8_done.svg" style="width:50px"></td>
+<td>enregistrer l&rsquo;animation pour l&rsquo;intégrer dans l&rsquo;exposition</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="matériel">Matériel</h2>
+
+<ul>
+<li>- 3 à 5 ipads (ou tablettes Android) Attention: les tablettes doivent être en permanence branchées.</li>
+<li>- un serveur (ce serait bien d&rsquo;avoir quelque chose de plus rapide qu&rsquo;un mac mini)</li>
+<li>- un routeur pour créer un réseau wifi (c&rsquo;est possible d&rsquo;utiliser celui d&rsquo;Andréas)</li>
+<li>- un projecteur, un écran 1.ou une télévision</li>
+</ul>
+
+
+    </section>
+
+    
+
+    <section id="expo">
+
+        <h1><a href="#expo">Exposition</a><small><a href="#html">Back to Top</a></small></h1>
+
+        <p><img src="traits.gif" alt="" /></p>
+
+<p>Nous comptons demander à 10-20 dessinateurs de créer des bouboucles spécialement pour les montrer dans l&rsquo;exposition.</p>
+
+<h2 id="matériel">Matériel</h2>
+
+<h3 id="écrans-et-ou-projecteurs">- écrans et/ou projecteurs</h3>
+
+<p>Soit:</p>
+
+<ul>
+<li>- au moins deux projecteurs qui projettent sur une surface assez grande pour qu&rsquo;on la divise en quatre animations ou plus</li>
+<li>- 8 à 10 écrans ou télévisions</li>
+<li>- 8 à 10 ipads</li>
+</ul>
+
+<h3 id="ordinateurs">- ordinateurs</h3>
+
+<p>Si on utilise des projecteurs ou des écrans, il faut pouvoir les connecter chacun à un ordinateur. Je ne sais pas combien d&rsquo;écrans on peut connecter au même ordinateur.</p>
+
+<p>Si on décide d&rsquo;afficher les animations dans des tablettes, elles n&rsquo;ont pas besoin d&rsquo;être connectées à un ordinateur.</p>
+
+
+    </section>
+
+    
+
+    <section id="musique">
+
+        <h1><a href="#musique">Eventuelles possibilités musicales</a><small><a href="#html">Back to Top</a></small></h1>
+
+        <p>Marine a informé Vincent et Kevin de ces possibilités. Ils reprendront contact avec Andréas s&rsquo;ils sont interéssés.</p>
+
+<h2 id="musiciens-live">musiciens live</h2>
+
+<p>L&rsquo;intérêt d&rsquo;accompagner des musiciens en live, c&rsquo;est qu&rsquo;ils peuvent suivent le rythme de bouboucle. On peut facilement régler bouboucle à l&rsquo;avance pour correspondre à n&rsquo;importe quel rythme, mais c&rsquo;est compliquer de l&rsquo;adapter en cours de route à un rythme existant. (Quoique j&rsquo;avais une fonctionnalité pour ça dans une ancienne version, mais on ne l&rsquo;a jamais vraiment testée)</p>
+
+<h2 id="musique-enregistrée">musique enregistrée</h2>
+
+<p>C&rsquo;est intéressant d&rsquo;accompagner de la musique même si bouboucle n&rsquo;a pas exactement le même rythme. On pourrait faire comme la projection de dessins faits en direct lors des soirées à la Datcha (je crois?)</p>
+
+
+    </section>
+
+    
+
+</body>
+</html>

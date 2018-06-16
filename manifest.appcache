@@ -1,0 +1,34 @@
+CACHE MANIFEST
+# Cache manifest version 0.0.13
+
+js/fumetto-export-info-ui.js
+js/simple-ui.js
+lib/paper-core.js
+js/urlUtils.js
+js/actions.js
+js/ajax.js
+js/io.js
+js/makeLine.js
+js/makeTimeKeeper.js
+js/makeLooper.js
+simple.css
+simple-ipad.css
+icons/2_taille_1.svg
+icons/2_taille_2.svg
+icons/2_taille_3.svg
+icons/2_taille_4.svg
+icons/2_taille_5.svg
+icons/2_taille_6.svg
+icons/3_trait_1.svg
+icons/3_trait_2.svg
+icons/3_trait_3.svg
+icons/3_trait_4.svg
+icons/3_trait_5.svg
+icons/3_trait_6.svg
+icons/4_erase.svg
+icons/5_redo.svg
+icons/6_pause.svg
+icons/6_play.svg
+icons/7_undo.svg
+icons/8_done.svg
+icons/9_informations.svg

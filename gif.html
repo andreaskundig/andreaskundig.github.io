@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script type="text/javascript" src="lib/paper-core.js"></script>
+    <!-- <script type="text/javascript" src="lib/gif.js"></script> -->
+    <script type="text/javascript" src="lib/gifshot.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/gif.workers.js"></script> -->
+ </head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+
+window.onload = function() {
+		// Get a reference to the canvas object
+		var canvas = document.getElementById('myCanvas');
+// Create an empty project and a view for the canvas:
+     paper.setup(canvas);
+     var rectangle = new paper.Rectangle(0, 0, canvas.width, canvas.height);
+     var path2 = new paper.Path.Rectangle(rectangle);
+path2.fillColor = '#e9e9ff';
+     // Create a Paper.js Path to draw a line into it:
+     var path = new paper.Path();
+     // Give the stroke a color
+     path.strokeColor = 'red';
+     var start = new paper.Point(50, 100);
+     // Move to start and draw a line from there
+     path.moveTo(start);
+     // Note that the plus operator on Point objects does not work
+     // in JavaScript. Instead, we need to call the add() function:
+     path.lineTo(start.add([ 200, -50 ]));
+     
+     // Draw the view now:
+     paper.view.draw(); 
+}
+function createImg(){
+     var canvas = document.getElementById('myCanvas');
+     var url    = canvas.toDataURL("image/png");
+     var newImg = document.createElement("img");
+     newImg.src = url;
+     document.getElementById('image').appendChild(newImg);
+     return newImg;
+ }
+
+function gifshotImages(opts){
+     console.log('hey', opts);
+     gifshot.createGIF(opts         /* gifshot.createGIF({
+            interval: 1,
+            'images': imgs,
+            //'images': ['http://i.imgur.com/2OO33vX.jpg', 'http://i.imgur.com/qOwVaSN.png', 'http://i.imgur.com/Vo5mFZJ.gif']} */
+     ,function(obj) {
+         if(!obj.error) {
+             var image = obj.image,
+                 animatedImage = document.createElement('img');
+             animatedImage.src = image;
+             document.body.appendChild(animatedImage);
+             /* window.open(image); */
+         }
+     });
+} 
+function createGif(){
+     var canvas = document.getElementById('myCanvas');
+     var url    = canvas.toDataURL("image/png");
+         var newImg = document.createElement("img");
+
+         newImg.onload = function() {
+             // no longer need to read the blob so it's revoked
+             URL.revokeObjectURL(url);
+         };
+
+         newImg.src = url;
+     setTimeout(
+         function(){gifshotImages(
+             {interval:.5,
+              /* images:[url,  */
+              images:[newImg, 
+                      'http://i.imgur.com/2OO33vX.jpg'], 
+              gifWidth: canvas.width, 
+              gifHeight: canvas.height});
+         }
+         ,10);
+}
+function createBlob(){
+     var canvas = document.getElementById('myCanvas');
+     canvas.toBlob(function(blob) {
+         var newImg = document.createElement("img"),
+             url = URL.createObjectURL(blob);
+
+         newImg.onload = function() {
+             // no longer need to read the blob so it's revoked
+             URL.revokeObjectURL(url);
+         };
+
+         newImg.src = url;
+         document.body.appendChild(newImg);
+     });
+}
+function createBlobGif(){
+     var canvas = document.getElementById('myCanvas');
+     canvas.toBlob(function(blob) {
+         var newImg = document.createElement("img"),
+             url = URL.createObjectURL(blob);
+
+         newImg.onload = function() {
+             // no longer need to read the blob so it's revoked
+             URL.revokeObjectURL(url);
+         };
+
+         newImg.src = url;
+         document.body.appendChild(newImg);
+         setTimeout(
+             function(){gifshotImages(
+                 {interval:.5,
+                  images:[newImg, 
+                          /* images:[url,  */
+                          'http://i.imgur.com/2OO33vX.jpg'], 
+                  gifWidth: canvas.width, 
+                  gifHeight: canvas.height});
+             }
+             ,10);
+     }, 'image/png');
+}
+</script>
+<button onclick="createImg()">img</button>
+<button onclick="createBlob()">blob</button>
+<button onclick="createGif()">gif</button>
+<button onclick="createBlobGif()">blobgif</button>
+<div id="image"></div>
+</body>
+</html>

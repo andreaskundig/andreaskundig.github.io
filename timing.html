@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>bouboucle</title>
+    <script type="text/javascript" src="lib/paper-core.js"></script>
+    <script type="text/javascript" src="lib/gifshot.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slider.css" />
+    <style>
+     html, body{
+         font-family: Sans-Serif;
+         margin: 0;
+         padding: 0;
+     }
+     #line-control {
+         vertical-align: top;
+         background-color: #E0E0E0;}
+     #container{
+         display: flex;
+         /* margin: 5px; */
+         padding: 5px 5px 5px 0px;
+         background-color: #E0E0E0;
+         width: 1045px;
+     }
+     canvas {cursor: crosshair;}
+     #looper-control {display: flex;}
+     #looper-control > a {margin: -4px 0px;}
+     #hidden-div { visibility: hidden; position: fixed; z-index: -1;}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="line-control"></div>
+      <div>
+        <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>
+        <div id="looper-control"></div>
+      </div>
+    </div>
+    <div><canvas id="hidden-canvas"></canvas></div>
+  <script type="text/javascript" src="bundle-old-timing.js"></script></body>
+</html>

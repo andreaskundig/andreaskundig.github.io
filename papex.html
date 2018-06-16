@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="lib/paper-core.js"></script>
+    <style>
+     canvas, img{
+         border: solid black 1px;
+     }
+    </style>
+    <!-- Define inlined JavaScript -->
+    <script type="text/javascript">
+     // Only executed our code once the DOM is ready.
+
+     
+     window.onload = function() {
+         try{
+	     // Get a reference to the canvas object
+             w = 300;
+             h = 200;
+//             w2 = w; h2 = h;
+	     canvasParent = document.getElementById('canvas-parent');
+             //canvasParent.style.display = 'none';
+	     canvas = document.createElement('canvas');
+             canvas.style.cssText = "width:"+w+"px; height: "+h+"px";
+             canvasParent.appendChild(canvas);
+	     paper.setup(canvas);
+
+             targetWidth = 150
+             pixelRatio = paper.view.pixelRatio;
+             w2 = targetWidth / pixelRatio;
+             h2 = w2 / w * h;
+             z = w2 / w ;
+
+             /* z = 1/2 / pixelRatio;
+                w2 = w * z; 
+                h2 = h * z; */
+	     canvas2 = document.createElement('canvas');
+             canvas2.style.cssText = "width:"+w2+"px; height:"+h2+"px;"
++"visibility: hidden";
+             canvasParent.appendChild(canvas2);
+
+	     // Create an empty project and a view for the canvas:
+	     // Create a Paper.js Path to draw a line into it:
+	     var path = new paper.Path();
+	     // Give the stroke a color
+	     path.strokeColor = 'black';
+             path.strokeWidth = 10;
+	     var start = new paper.Point(0, 100);
+	     // Move to start and draw a line from there
+	     path.moveTo(start);
+	     // Note that the plus operator on Point objects does not work
+	     // in JavaScript. Instead, we need to call the add() function:
+	     path.lineTo(start.add([ 300, 0 ]));
+	     // Draw the view now:
+	     paper.view.draw();
+
+             paper.setup(canvas2);
+             p1 = paper.projects[0];
+             p2 = paper.projects[1];
+             var t = (z-1)/ 2;
+             p2.view.translate([w*t,h*t]);
+             p2.view.zoom = z;
+             p2.importJSON(p1.exportJSON());
+             p2.view.draw();
+             
+             console.log(p1.view.pixelRatio);
+
+	     img = document.createElement('img');
+             img.src = canvas2.toDataURL("image/png");
+             /* iw = 151;// / pixelRatio;
+                ih = 102; // / pixelRatio;
+                img.style.cssText = "width:"+iw+"px; height:"+ih+"px;"; */
+	     imgParent = document.getElementById('img-parent');
+             imgParent.appendChild(img);
+             
+         }catch(e){
+             console.log(e, e.message);
+         }
+     };
+     
+    </script>
+  </head>
+  <body>
+    <div id="canvas-parent"></div>
+    <div id="img-parent"></div>
+  </body>
+</html>
