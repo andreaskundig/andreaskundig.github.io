@@ -18,7 +18,9 @@ body {
 #stroke-submenu > div, #timing-submenu > div {
     width: 16.66666%; /* 6 buttons */
 }
-.menu > div > img, #color-button > svg,
+.menu > div > img,
+.menu > div > div,
+#color-button > svg,
 #stroke-submenu > div > img,
 #timing-submenu > div > img {
     width: 100%;
