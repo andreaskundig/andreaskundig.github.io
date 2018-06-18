@@ -19,6 +19,10 @@
   </url>
   
   <url>
+    <loc>http://example.org/contact/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
     <priority>0</priority>
   </url>

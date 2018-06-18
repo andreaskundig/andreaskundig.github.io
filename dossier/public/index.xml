@@ -26,7 +26,7 @@
       
       <guid>http://example.org/installation/</guid>
       <description>L&amp;rsquo;écran affiche les animations que les visiteurs sont en train de dessiner sur les tablettes. Quand personne ne dessine, une série d&amp;rsquo;animations choisies passe en boucle. Les visiteurs peuvent choisir d&amp;rsquo;ajouter leur animation à la série qui passe en boucle.
-A animatou, les tablettes étaient dans des socles. A la villa Bernasconi, les tablettes étaient dans des planches. Mode d&amp;rsquo;emploi           couleur du trait    épaisseur du trait    durée de vie et rythme du trait    effacer tout    défaire    refaire    pause / play    enregistrer l&amp;rsquo;animation pour l&amp;rsquo;intégrer dans l&amp;rsquo;exposition    Matériel  - 3 à 5 ipads (ou tablettes Android) Attention: les tablettes doivent être en permanence branchées.</description>
+A animatou, les tablettes étaient dans des socles. (Les socles appartiennent au musée des Suisses dans le monde, qui nous les prête volontiers, sauf s&amp;rsquo;ils en ont besoin pour leurs propres expos).</description>
     </item>
     
     <item>
@@ -48,6 +48,15 @@ Matériel - écrans et/ou projecteurs Soit:
       <guid>http://example.org/autres/</guid>
       <description>Marine a informé Vincent et Kevin de ces possibilités. Ils reprendront contact avec Andréas s&amp;rsquo;ils sont interéssés.
 musiciens live L&amp;rsquo;intérêt d&amp;rsquo;accompagner des musiciens en live, c&amp;rsquo;est qu&amp;rsquo;ils peuvent suivent le rythme de bouboucle. On peut facilement régler bouboucle à l&amp;rsquo;avance pour correspondre à n&amp;rsquo;importe quel rythme, mais c&amp;rsquo;est compliquer de l&amp;rsquo;adapter en cours de route à un rythme existant. (Quoique j&amp;rsquo;avais une fonctionnalité pour ça dans une ancienne version, mais on ne l&amp;rsquo;a jamais vraiment testée)</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://example.org/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contact/</guid>
+      <description>En cas de problème: Andréas Kündig 079 638 92 25</description>
     </item>
     
   </channel>
