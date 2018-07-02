@@ -15,7 +15,7 @@ body {
 .menu > div {
     width: 11.1111%; /* 9 buttons */
 }
-#stroke-submenu > div, #timing-submenu > div {
+#stroke-submenu > div, #timing-submenu > div.old {
     width: 16.66666%; /* 6 buttons */
 }
 .menu > div > img,
