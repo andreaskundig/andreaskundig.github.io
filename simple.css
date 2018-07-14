@@ -106,8 +106,6 @@ body {
     background-color:#dddddd;
 }
 #canvas-parent > canvas{
-    height: 100%;
-    width: 100%;
     cursor: crosshair;
     display:block;
     margin: auto;
