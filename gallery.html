@@ -54,6 +54,16 @@
      }
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
+    <script type="text/javascript">
+       var config = {loaders:[
+              {constr: 'alternating',
+               loaders: [{constr: 'list', name: 'exemples'},
+                         {constr: 'list', name: 'bdfil2018'}]},
+              {decorator: 'highPriority',
+               loader: {constructor: 'autosave'}},
+               {decorator: 'reloadPage', seconds: 8},
+               {decorator: 'autoPlay'}]};
+    </script>
   </head>
   <body>
     <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>

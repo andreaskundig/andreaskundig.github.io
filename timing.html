@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <title>bouboucle</title>
     <script type="text/javascript" src="lib/paper-core.js"></script>
+    <script type="text/javascript" src="lib/gifshot.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="slider.css" />
     <style>
@@ -25,8 +26,7 @@
      canvas {cursor: crosshair;}
      #looper-control {display: flex;}
      #looper-control > a {margin: -4px 0px;}
-     .hidden { display:none}
-     /* #hidden-div { visibility: hidden; position: fixed; z-index: -1;} */
+     #hidden-div { visibility: hidden; position: fixed; z-index: -1;}
     </style>
   </head>
   <body>
@@ -37,6 +37,6 @@
         <div id="looper-control"></div>
       </div>
     </div>
-    <div class="hidden"><canvas id="hidden-canvas"></canvas></div>
+    <div><canvas id="hidden-canvas"></canvas></div>
   <script type="text/javascript" src="bundle-old-timing.js"></script></body>
 </html>
