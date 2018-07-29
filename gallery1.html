@@ -54,6 +54,16 @@
      }
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
+    <script type="text/javascript">
+       var config = {loaders:[
+              {constr: 'alternating',
+               loaders: [{constr: 'list', name: 'exemples'},
+                         {constr: 'list', name: 'bdfil2018'}]},
+              {decorator: 'highPriority',
+               loader: {constructor: 'autosave'}},
+              {decorator: 'reloadPage', count: 8},
+              {decorator: 'autoPlay'}]};
+    </script>
   </head>
   <body>
     <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>
@@ -69,5 +79,5 @@
         <i class="fa fa-arrow-right" aria-hidden="true"></i>
       </button>
     </div>
-  <script type="text/javascript" src="bundle-save.js"></script></body>
+  <script type="text/javascript" src="bundle-gallery.js"></script></body>
 </html>

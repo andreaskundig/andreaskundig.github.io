@@ -55,14 +55,12 @@
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript">
-       var config = {loaders:[
-              {constr: 'alternating',
-               loaders: [{constr: 'list', name: 'exemples'},
-                         {constr: 'list', name: 'bdfil2018'}]},
-              {decorator: 'highPriority',
-               loader: {constructor: 'autosave'}},
-               {decorator: 'reloadPage', seconds: 8},
-               {decorator: 'autoPlay'}]};
+       var config =
+                    {loaders: [{constr: 'list', name: 'bdfil2018'},
+                               {decorator: 'reloadPage', count: 4},
+                               {decorator: 'autoPlay', period: 6000}],
+                     navigation: true,
+                     save:false}; 
     </script>
   </head>
   <body>
