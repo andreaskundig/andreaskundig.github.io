@@ -21,14 +21,27 @@
          padding: 20px 0px;
          border-bottom: 1px solid #dddddd;
      }
+
+
+     #canvas-parent{
+         position:absolute;
+         width:100%;
+         top: 0;
+         bottom: 0;
+         /* bottom: 0.457%; */
+         background-color: black;
+     }
      
      canvas{
-         position: absolute;
+         display:block;
          margin: auto;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
+         /* position: absolute;
+            margin: 0 ;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; */
+
      }
      /* * {cursor: none;} */
      
@@ -36,48 +49,82 @@
          font: 21px arial, sans-serif;
          position:absolute;
          z-index: 100%;
-         left: 60px;
-         bottom: 30px;
+         left: 20px;
+         bottom: 10px;
          color: rgba(170,170,170,0.4);
      }
-     .hidden { display: none; }
+     .hidden { display: none !important; }
      #navigation{
          position:absolute;
-         z-index: 100%;
-         right: 100px;
-         bottom: 30px;
+         z-index: 100;
+         right: 20px;
+         bottom: 10px;
      }
      #navigation > button{
          font: 21px arial, sans-serif;
          /* color: rgba(170,170,170,0.4); */
          background-color: white;
      }
+     #menu {
+         position: absolute;
+         margin: 0 ;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 100;
+         background-color: black;
+     }
+     #menu > div {
+         display: flex;
+         flex-wrap: wrap;
+         margin: 2%;
+         height: 96%;
+         overflow-y: auto;
+     }
+     #menu > div >  a {
+         padding: 25px;
+         margin: 2px;
+         color: #969696;
+         font:  1.2em "Fira Sans", sans-serif;
+         background-color: #212121;
+     }
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript">
-       var config = {loaders:[
-              {constr: 'alternating',
-               loaders: [{constr: 'list', name: 'exemples'},
-                         {constr: 'list', name: 'bdfil2018'}]},
-              {decorator: 'highPriority',
-               loader: {constructor: 'autosave'}},
-              {decorator: 'reloadPage', count: 8},
-              {decorator: 'autoPlay'}]};
+       var config = {
+              loaders:[
+               {constr: 'alternating',
+                loaders: [{constr: 'list', name: 'exemples'},
+                          {constr: 'directory', name: 'animatou2017'}]},
+               {decorator: 'highPriority',
+                loader: {constructor: 'autosave'}},
+               {decorator: 'reloadPage', count: 8},
+               {decorator: 'autoPlay', pause: false}]};
     </script>
   </head>
   <body>
     <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>
-    <div id="animation-name">Toto</div>
+    <div id="animation-name"></div>
     <div id="navigation" class="hidden" >
-      <button id="previous">
+      <button id="bt-previous">
         <i class="fa fa-arrow-left" aria-hidden="true"></i>
       </button>
-      <button id="save">
+      <button id="bt-save">
         <i class="fa fa-floppy-o" aria-hidden="true"></i>
       </button>
-      <button id="next">
+      <button id="bt-next">
         <i class="fa fa-arrow-right" aria-hidden="true"></i>
       </button>
+      <button id="bt-menu">
+        <i class="fa fa-th" aria-hidden="true"></i>
+      </button>
+      <button id="bt-bouboucle">
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="menu" class="hidden">
+      
     </div>
   <script type="text/javascript" src="bundle-gallery.js"></script></body>
 </html>
