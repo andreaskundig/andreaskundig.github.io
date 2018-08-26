@@ -18,15 +18,6 @@
      body, td{
          font:  21px arial, sans-serif;
      }
-     .title {
-         font-weight: bold;
-     }
-     span.title{
-         margin-right: 15px;
-     }
-     div.title{
-         margin-bottom: 14px;
-     }
 
      #canvas-parent{
          position:absolute;
@@ -50,20 +41,45 @@
      }
      /* * {cursor: none;} */
      
+     .hidden { display: none !important; }
+
+     #footer {
+         position: absolute;
+         height: 47px;
+         width: 100%;
+         bottom: 0px;
+         border-top: 1px solid #606060;
+         z-index: 100;
+     }
+
      #animation-name{
-         position:absolute;
-         z-index: 100%;
-         left: 20px;
-         bottom: 10px;
+         float:left;
+         clear:both;
+         margin: 10px 20px;
+         /* left: 20px;
+            bottom: 10px; */
          color: rgba(170,170,170,0.4);
      }
-     .hidden { display: none !important; }
-     #navigation{
-         position:absolute;
-         z-index: 100;
-         right: 20px;
-         bottom: 10px;
+     .author {
+         font-weight: bold;
      }
+     span.title{
+         margin-right: 5px;
+     }
+     div.title{
+         margin-bottom: 14px;
+     }
+     #navigation{
+         float:right;
+         margin: 4px 20px;
+     }
+     #navigation > div  {
+         display: inline-block;
+     }
+     #navigation > div > img {
+         height: 39px;
+     }
+     
      #navigation > button{
          font: 21px arial, sans-serif;
          /* color: rgba(170,170,170,0.4); */
@@ -100,36 +116,53 @@
          background-color: #212121;
          border: 2px solid black;
      }
+
+     
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript">
        var config =
-                    {loaders: [{constr: 'list', name: 'bdfil2018'},
-                               // {decorator: 'reloadPage', count: 8},
-                               {decorator: 'autoPlay', period: 6000}],
+                    {loaders: [
+                     {constr: 'list', name: 'bdfil2018'},
+                     {decorator: 'reloadPage', count: 8},
+                     {decorator: 'autoPlay', period: 6000, pause:false}],
                      navigation: true,
                      save:false}; 
     </script>
   </head>
   <body>
     <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>
-    <div id="animation-name"></div>
-    <div id="navigation" class="hidden" >
-      <button id="bt-previous">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-      </button>
-      <button id="bt-save">
-        <i class="fa fa-floppy-o" aria-hidden="true"></i>
-      </button>
-      <button id="bt-next">
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      </button>
-      <button id="bt-menu">
-        <i class="fa fa-th" aria-hidden="true"></i>
-      </button>
-      <button id="bt-bouboucle">
-        <i class="fa fa-pencil" aria-hidden="true"></i>
-      </button>
+    <div id="footer">
+      <div id="animation-name"></div>
+      <div id="navigation" class="hidden" >
+        <div id="bt-previous">
+          <img src="icons/13_previous_light.svg">
+        </div>
+        <div id="bt-next">
+          <img src="icons/14_next_light.svg">
+        </div>
+        <div id="bt-menu">
+          <img src="icons/15_gallery_light.svg">
+        </div>
+        <div id="bt-bouboucle">
+          <img src="icons/16_draw_light.svg">
+        </div>
+        <!-- <button id="bt-previous">
+             <i class="fa fa-arrow-left" aria-hidden="true"></i>
+             </button> -->
+        <button id="bt-save">
+          <i class="fa fa-floppy-o" aria-hidden="true"></i>
+        </button>
+        <!-- <button id="bt-next">
+             <i class="fa fa-arrow-right" aria-hidden="true"></i>
+             </button>
+             <button id="bt-menu">
+             <i class="fa fa-th" aria-hidden="true"></i>
+             </button>
+             <button id="bt-bouboucle">
+             <i class="fa fa-pencil" aria-hidden="true"></i>
+             </button> -->
+      </div>
     </div>
     <div id="menu" class="hidden">
       <div></div>
