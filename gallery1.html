@@ -96,21 +96,25 @@
          background-color: black;
      }
      #menu > div {
-         /* display: flex;
-            flex-wrap: wrap; */
-         /* margin: 0 auto; */
          height: 96%;
-         overflow-y: auto;
+         overflow-x: auto;
      }
      #menu > div > table  {
          margin: 0 auto;
          border: 14px solid black;
      }
-     #menu > div > table > tr >td  {
+     #menu > div > div > table {
+         float: left;
+         height: 100%;
+     }
+     #menu > div > table > tr >td  ,
+     #menu > div > div > table> tr > td,  
+     #menu > div > table > tbody > tr >td  {
          padding: 25px;
          /* margin: 2px; */
          /* width: calc((100% - 4%)/3 - 27px); */
          width: 33%;
+         height: 33%;
          /* height: 100px; */
          color: #969696;
          background-color: #212121;
@@ -128,7 +132,7 @@
                           {constr: 'directory', name: 'animatou2017'}]},
                {decorator: 'highPriority',
                 loader: {constructor: 'autosave'}},
-               {decorator: 'reloadPage', count: 8},
+               // {decorator: 'reloadPage', count: 8},
                {decorator: 'autoPlay', pause: false}]};
     </script>
   </head>
@@ -149,21 +153,9 @@
         <div id="bt-bouboucle">
           <img src="icons/16_draw_light.svg">
         </div>
-        <!-- <button id="bt-previous">
-             <i class="fa fa-arrow-left" aria-hidden="true"></i>
-             </button> -->
         <button id="bt-save">
           <i class="fa fa-floppy-o" aria-hidden="true"></i>
         </button>
-        <!-- <button id="bt-next">
-             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-             </button>
-             <button id="bt-menu">
-             <i class="fa fa-th" aria-hidden="true"></i>
-             </button>
-             <button id="bt-bouboucle">
-             <i class="fa fa-pencil" aria-hidden="true"></i>
-             </button> -->
       </div>
     </div>
     <div id="menu" class="hidden">
