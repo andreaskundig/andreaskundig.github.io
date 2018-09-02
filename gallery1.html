@@ -23,7 +23,7 @@
          position:absolute;
          width:100%;
          top: 0;
-         bottom: 0;
+         bottom: 47px;
          /* bottom: 0.457%; */
          background-color: black;
      }
@@ -87,28 +87,33 @@
      }
      #menu {
          position: absolute;
-         margin: 0 ;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         z-index: 100;
+         width: 100%;
+         height: 100%;
          background-color: black;
+         z-index: 100;
      }
      #menu > div {
-         height: 96%;
+         position: absolute;
+         margin: 0 ;
+         width: 100%;
+         top: 0;
+         bottom: 47px;
          overflow-x: auto;
      }
-     #menu > div > table  {
+     #menu  > table  {
          margin: 0 auto;
          border: 14px solid black;
      }
+     #menu > div > table {
+    margin: 0 auto;
+    border: 14px solid black;
+}
      #menu > div > div > table {
          float: left;
          height: 100%;
      }
      #menu > div > table > tr >td  ,
-     #menu > div > div > table> tr > td,  
+     #menu  > div> div > table> tr > td,  
      #menu > div > table > tbody > tr >td  {
          padding: 25px;
          /* margin: 2px; */
@@ -121,7 +126,60 @@
          border: 2px solid black;
      }
 
+     #menu  > div> div > table> tr > td > img{
+         width: auto; 
+         height: 100%;
+     }
+
+   .menu-pane {
+       height: 100%;
+       width:300%;
+       background-color: #000000;
+   }
+   div.menu-pane > div.padding-1 {
+       height: 5%;
+   }
+   div.menu-grid {
+       width: 29.33%;
+       padding: 0 2%;
+       height: 95%;
+       float:left;
+   }
+
+   div.menu-grid > div {
+       width: 21.33%;
+       height: 33.33%;
+       outline: 1px solid;
+       padding: 0 6% ;
+       float: left;
+       /* color: #222222; */
+   }
+
+   div.menu-grid > div> div {
+       max-width: 100%;
+       height: 12%;
+       margin: 0 auto;
+       color: #cccccc;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+   }
+   div.menu-grid > div> div.anim {
+       height: 60%;
+   }
+   div.menu-grid > div> div.padding-2 {
+       height: 4%;
+   }
+   div.menu-grid > div> div > img {
+       max-height:100%;
+       max-width: 100%;
+       /* width: auto;
+          height: auto; */
+       }
      
+   .emphasized {
+       font-weight: bold;
+   }
     </style>
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript">

@@ -1,7 +1,4 @@
-[{ "author": "Zef", "title": "Confettis au mauvais format",
-   "gist":"26235f58d85252f206bf55047af8164b/raw/5b5a4f11d0110a16ac90a9f4724f061f7ce10722"},
- { "author": "Andréas Kündig", "title": "Premieres vagues",
-   "gist":"7750902a02bc6d5d87fdd74638543c97/raw/fb89ebaf1ee9bc226a48307b0db92739661151b1"},
+[
  { "author": "Ivan Gulizia", "title": "Usine",
    "gist":"f0aa58c024414ec2d9f3719f13d629cb/raw/4d81684cc6ab274a3aa55ec000eb60bdbfd48a3e"},
  { "author": "Andréas Kündig", "title": "Vagues de traits font une boucle",
@@ -224,11 +221,13 @@
   "gist": "f1ba6f8d5e6b7ac30d48aa720e7c1f55/raw/b74e14da6160d3ce1def15e3ec05800455b42580"},
  {"author": "Soeurs forêt noire", "title": "Gorille", 
   "gist": "88180315a55bd4127600d6afd7c57077/raw/635d71d2b0781d53781040b6b4d401720ec9b830"},
- {"author": "Soeurs forêt noire", "title": "Gorille", 
-  "gist": "88180315a55bd4127600d6afd7c57077/raw/635d71d2b0781d53781040b6b4d401720ec9b830"},
  {"author": "Charles Chalas", "title": "Clair de lunes autoroutier",
   "gist": "b2d49bb95b71d2ae59eb8215cd852121%2Fraw%2F259645fb14f3f12987c074450edcbf91861d2e1f"},
  {"author": "Charles Chalas", "title": "Consoles à planètes",
-  "gist":"160145d7242740fcfc02b7e7cf0ba1e8/raw/decb666562448c2776c4407a7a21317d6a401a71"}
- 
+  "gist":"160145d7242740fcfc02b7e7cf0ba1e8/raw/decb666562448c2776c4407a7a21317d6a401a71"},
+    {"author":  "Andréas Kündig", "title": "Digérons en rond",
+  "gist":"a83b5fa34159a0de2be58276c903556c/raw/70d381edf1857b14e2f16102105464eb71f90fc9"},
+{"author": "Andréas Kündig", "title": "Saute-nuages", "gist": "2b3114e83b2a4dad6c302ea24495c8c9/raw/993cfba2219e81e7d90c2ea44bcf9fcc25699023"},
+{"author": "Andréas Kündig", "title": "Démarche",
+ "gist": "8dff151a3b8b6c21058f271cc1b1934a/raw/e5b0e455b0a3b9968c0400fed36033352767a1c6"}
 ]
