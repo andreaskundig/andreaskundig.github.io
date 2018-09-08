@@ -1,6 +1,8 @@
 [
     { "author": "Ivan Gulizia", "title": "Usine",
       "gist":"f0aa58c024414ec2d9f3719f13d629cb/raw/4d81684cc6ab274a3aa55ec000eb60bdbfd48a3e"},
+ { "author": "Andréas Kündig", "title": "Premieres vagues",
+   "gist":"7750902a02bc6d5d87fdd74638543c97/raw/fb89ebaf1ee9bc226a48307b0db92739661151b1"},
     { "author": "Andréas Kündig", "title": "Vagues de traits font une boucle",
       "gist":"ae9091db34324149d65452637e2fd6a0/raw/aefbeeb310d7e77f27bdc6e945ea8df8e4058b36"},
     { "author": "Zef", "title": "Félin",
@@ -254,5 +256,23 @@
     {"author": "Julien Dinkel", "title": "Raindance",
      "gist": "7754de54632ed0361b3dc82a2749a04d/raw/78018440bb47d3e9935b4357304384bcd0a66059"},
     {"author": "Maurane Mazars", "title": "Tasty",
-     "gist": "2d72cd25fbd373d58af69b8ae1162815%2Fraw%2F441dd7830010e31e4479811b8c89bdf079918407"}
+     "gist": "2d72cd25fbd373d58af69b8ae1162815%2Fraw%2F441dd7830010e31e4479811b8c89bdf079918407"},
+    {"author": "Ivan Gulizia", "title": "Trou de verre techno",
+"gist": "f28971395143d60cf601edb4355b6175%2Fraw%2F9e3f3fc4321ca5c3db08181f38b43e8a0f39e191"},
+    {"author": "Ivan Gulizia", "title": "Pull qui gratte",
+"gist": "4e71e050fdce31a0da362bad8a9aff45%2Fraw%2Fb1ccd420f4890bb6280089ab57df1f86349ffe41"},
+    {"author": "Ivan Gulizia", "title": "Visages",
+"gist": "4b658b3c8960df948a1cc8232d40a108%2Fraw%2F6c78034adc694cfb2e0203d468cf3b9fc74cf527"},
+    {"author": "Ivan Gulizia", "title": "Séparation de chat",
+"gist": "46938261873e1feda1f75e7db9a44d2f%2Fraw%2F547dce8b6c95dbbce563fcb4cf9f117bc6eade88"},
+    {"author": "Ivan Gulizia", "title": "Gaza Fiesta",
+"gist": "d1bd73b1b6f80fb7d4cca061518c5668%2Fraw%2F51894d5ceb697ecb5531c6cae766b1ffec1f1fce"},
+    {"author": "Ivan Gulizia", "title": "Usine 2",
+     "gist": "cdcf969b6dcd9bc5d0181648230d4da1/raw/c9da43dfff7541a588da13c0c46e1d7c1a62318e"},
+    {"author": "Ivan Gulizia", "title": "Digestion",
+     "gist": "ffa9b584524572078952235c0dbe82f2%2Fraw%2F2ce5bfe226dcf150f2fcb131ef482b62efe41f6d"},
+    {"author": "Janko","title": "L'homme boucle",
+    "gist": "15130cc6e666163db88844aabfd8b755%2Fraw%2Fa3ddf3e06c32f09b26f23aa1937d836f9d6bb338"},
+    {"author": "Nico Fremz",  "title": "Fremzy",
+    "gist": "99ce7be0a1147bceaa8332594c9e41be%2Fraw%2Fe3cecfb7d9aaf19052ec532d75a202fc2f898f75"}
 ]

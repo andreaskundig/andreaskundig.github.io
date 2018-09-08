@@ -39,11 +39,11 @@ var makeExportAndInfoUi = function(menu, looper, io){
             ' <div class="info">',
             '   <div class="info-fr">',
             // "     <p>Voulez-vous publier votre animation?</p>",
-            // "     <p>Voulez-vous sauvegarder votre animation</p>",
-            // "     <p>pour qu'elle soit projetée régulièrement sur l'écran?</p>",
-            "     <p>Voulez-vous sauvegarder votre animation?</p>",
-            "     <p>Nous la publierons sur blog.bouboucle.com, </p>",
-            "     <p>et peut-être aussi sur villabernasconi.ch.</p>",
+            "     <p>Voulez-vous sauvegarder votre animation</p>",
+            "     <p>pour qu'elle soit projetée régulièrement sur l'écran?</p>",
+            // "     <p>Voulez-vous sauvegarder votre animation?</p>",
+            // "     <p>Nous la publierons sur blog.bouboucle.com, </p>",
+            // "     <p>et peut-être aussi sur villabernasconi.ch.</p>",
             '   </div>',
             // '   <div class="info-en">',
             // '     <p>Do you want to publish your animation?</p>',
@@ -85,6 +85,13 @@ var makeExportAndInfoUi = function(menu, looper, io){
             menu.initShowSubmenu(infoMenuDiv, infoButtonDiv);
         },
 
+        initGalleryButton = function(){
+            var galleryButtonDiv = document.querySelector('#gallery-button');
+            galleryButtonDiv.addEventListener('click', function(){
+                document.location.href = '/gallery.html?menu=true';
+            });
+        },
+
         makeSaver = function(looper, fileName){
             var lastSaveTime = looper.getLastUpdateTime();
             return function(){
@@ -109,6 +116,7 @@ var makeExportAndInfoUi = function(menu, looper, io){
         
         var init = function(menu, looper){
             initExportButton({handle: makeSaver(looper)}, menu);
+            initGalleryButton();
             initInfoButton(menu);
             startAutoSaves(looper);
         };

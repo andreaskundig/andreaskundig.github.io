@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <title>bouboucle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript"">
+       var defaultConfig = {backgroundColor: '#000000',
+                            newTiming: false};
+    </script>
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript" 
             src="js/local-export-info-ui.js"></script>
     
     <link rel="stylesheet" type="text/css" href="simple.css" />
-    <link rel="stylesheet" type="text/css" href="simple-ipad.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="simple-ipad.css" /> -->
+    <style>
+    </style>
   </head>
   <body>
     
-    <div class="menu">
+    <div class="menu nine-buttons">
       <div id="color-button">
         <!-- 1_couleur+2_taille_5.svg is inlined so we can change its color -->
         <svg  version="1.1" id="Calque_1"
@@ -44,12 +50,15 @@
       </div><div id="pause-button"><img src="icons/6_pause.svg">
       </div><div id="export-button"><img src="icons/8_done.svg">
       </div><div id="info-button"><img src="icons/9_informations.svg">
+      </div><div id="gallery-button" class="hidden">
+        <img src="icons/15_gallery.svg">
       </div>
     </div>
     
     <div id="overlay" class="hidden"> </div>
     <div id="color-submenu" class="submenu hidden"> </div>
-    <div id="timing-submenu" class="submenu hidden"> </div>
+    <div id="timing-submenu" class="submenu hidden">
+    </div>
     <div id="stroke-submenu" class="submenu hidden"> </div>
     <div id="info-submenu" class="submenu hidden"></div>
     <div id="export-submenu" class="submenu hidden"></div>

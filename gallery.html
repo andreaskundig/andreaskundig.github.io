@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <meta http-equiv="Cache-control" content="public">
     <style>
      
      body {
@@ -43,7 +44,18 @@
      
      .hidden { display: none !important; }
 
-     #footer {
+     #gif-parent {
+         position: absolute;
+         width: 100%;
+         bottom: 47px;
+         width: 100%;
+         top: 0px;
+     }
+     #gif-parent > img{
+         width: auto; 
+         height: 100%;
+     }
+     .footer {
          position: absolute;
          height: 47px;
          width: 100%;
@@ -51,6 +63,9 @@
          border-top: 1px solid #606060;
          z-index: 100;
      }
+     .menu > div.footer {
+         z-index: 101;
+         }
 
      #animation-name{
          float:left;
@@ -69,14 +84,15 @@
      div.title{
          margin-bottom: 14px;
      }
-     #navigation{
+     #navigation, #menu-navigation{
          float:right;
          margin: 4px 20px;
      }
-     #navigation > div  {
+     #navigation > div, #menu-navigation > div  {
          display: inline-block;
      }
-     #navigation > div > img {
+     #navigation > div > img ,
+     #menu-navigation > div > img {
          height: 39px;
      }
      
@@ -92,7 +108,7 @@
          background-color: black;
          z-index: 100;
      }
-     #menu > div {
+     #menu > #animations {
          position: absolute;
          margin: 0 ;
          width: 100%;
@@ -181,20 +197,29 @@
        font-weight: bold;
    }
     </style>
+    <link rel="stylesheet" type="text/css" href="gallery-top.css">
     <script type="text/javascript" src="lib/paper-core.js"></script>
     <script type="text/javascript">
        var config =
                     {loaders: [
+                     // {constr: 'list', name: 'test'},
                      {constr: 'list', name: 'bdfil2018'},
-                     {decorator: 'reloadPage', count: 4},
+                     // {decorator: 'reloadPage', count: 8},
                      {decorator: 'autoPlay', period: 6000, pause:false}],
                      navigation: true,
+                     gifResolution: '_1136_800',
+                     menu: 'new',
                      save:false}; 
     </script>
   </head>
   <body>
-    <div id="canvas-parent"><canvas id="main-canvas"></canvas></div>
-    <div id="footer">
+    <div id="canvas-parent"><canvas id="main-canvas"></canvas>
+    </div>
+    <div id="gif-parent">
+      <img >
+      <!-- <img src="animations/bdfil2018/Andreas-Kundig__Breakdance-rate_1366_961.gif"> -->
+    </div>
+    <div id="footer" class="footer">
       <div id="animation-name"></div>
       <div id="navigation" class="hidden" >
         <div id="bt-previous">
@@ -215,7 +240,21 @@
       </div>
     </div>
     <div id="menu" class="hidden">
-      <div></div>
+      <div id="animations"></div>
+      <div class="footer">
+        <div id="menu-navigation" >
+          <div id="bt-menu-previous">
+            <img src="icons/13_previous_light.svg">
+          </div>
+          <div id="bt-menu-next">
+            <img src="icons/14_next_light.svg">
+          </div>
+          <div id="bt-menu-bouboucle">
+            <img src="icons/16_draw_light.svg">
+          </div>
+
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="bundle-gallery.js"></script></body>
 </html>

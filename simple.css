@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
 }
-.hidden { display: none; }
+.hidden { display: none !important;}
 .menu > div, #stroke-submenu > div, #timing-submenu > div {
     margin: 0;
     display: inline-block;
@@ -12,9 +12,15 @@ body {
 .menu > div:active, #stroke-submenu > div:active, #timing-submenu > div:active {
     background-color: #bbbbbb;
 }
-.menu > div {
+
+.nine-buttons > div {
     width: 11.1111%; /* 9 buttons */
 }
+
+.ten-buttons > div {
+    width: 10%; 
+}
+
 #stroke-submenu > div, #timing-submenu > div.old {
     width: 16.66666%; /* 6 buttons */
 }
