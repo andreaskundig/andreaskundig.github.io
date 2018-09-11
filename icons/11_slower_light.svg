@@ -11,16 +11,16 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_47_"  overflow="visible"/>
 	</clipPath>
-	<use xlink:href="#SVGID_47_"  overflow="visible" fill="none" stroke="#606060" stroke-width="2" stroke-miterlimit="10"/>
+	<use xlink:href="#SVGID_47_"  overflow="visible" fill="none" stroke="#bbbbbb" stroke-width="2" stroke-miterlimit="10"/>
 </g>
 <g>
 	<g>
-		<path fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M46.239,56.693"/>
+		<path fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M46.239,56.693"/>
 		<g>
 			
-				<line fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="47.369" y1="56.693" x2="62.519" y2="72.681"/>
+				<line fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="47.369" y1="56.693" x2="62.519" y2="72.681"/>
 			
-				<line fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="62.519" y1="40.706" x2="47.369" y2="56.693"/>
+				<line fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="62.519" y1="40.706" x2="47.369" y2="56.693"/>
 		</g>
 	</g>
 </g>

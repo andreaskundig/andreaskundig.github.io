@@ -40,7 +40,7 @@ var makeExportAndInfoUi = function(menu, looper, io){
             '   <div class="info-fr">',
             // "     <p>Voulez-vous publier votre animation?</p>",
             "     <p>Voulez-vous sauvegarder votre animation</p>",
-            "     <p>pour qu'elle soit projetée régulièrement sur l'écran?</p>",
+            "     <p>pour qu'elle soit projetée régulièrement sur le mur?</p>",
             // "     <p>Voulez-vous sauvegarder votre animation?</p>",
             // "     <p>Nous la publierons sur blog.bouboucle.com, </p>",
             // "     <p>et peut-être aussi sur villabernasconi.ch.</p>",

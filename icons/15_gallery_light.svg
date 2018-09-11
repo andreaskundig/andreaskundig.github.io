@@ -11,15 +11,15 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_49_"  overflow="visible"/>
 	</clipPath>
-	<use xlink:href="#SVGID_49_"  overflow="visible" fill="none" stroke="#606060" stroke-width="2" stroke-miterlimit="10"/>
+	<use xlink:href="#SVGID_49_"  overflow="visible" fill="none" stroke="#bbbbbb" stroke-width="2" stroke-miterlimit="10"/>
 </g>
-<circle fill="#606060" cx="56.693" cy="56.693" r="2.789"/>
-<circle fill="#606060" cx="67.85" cy="56.693" r="2.789"/>
-<circle fill="#606060" cx="45.537" cy="56.693" r="2.789"/>
-<circle fill="#606060" cx="56.693" cy="45.537" r="2.789"/>
-<circle fill="#606060" cx="67.85" cy="45.537" r="2.789"/>
-<circle fill="#606060" cx="45.537" cy="45.537" r="2.789"/>
-<circle fill="#606060" cx="56.693" cy="67.85" r="2.789"/>
-<circle fill="#606060" cx="67.85" cy="67.85" r="2.789"/>
-<circle fill="#606060" cx="45.537" cy="67.85" r="2.789"/>
+<circle fill="#bbbbbb" cx="56.693" cy="56.693" r="2.789"/>
+<circle fill="#bbbbbb" cx="67.85" cy="56.693" r="2.789"/>
+<circle fill="#bbbbbb" cx="45.537" cy="56.693" r="2.789"/>
+<circle fill="#bbbbbb" cx="56.693" cy="45.537" r="2.789"/>
+<circle fill="#bbbbbb" cx="67.85" cy="45.537" r="2.789"/>
+<circle fill="#bbbbbb" cx="45.537" cy="45.537" r="2.789"/>
+<circle fill="#bbbbbb" cx="56.693" cy="67.85" r="2.789"/>
+<circle fill="#bbbbbb" cx="67.85" cy="67.85" r="2.789"/>
+<circle fill="#bbbbbb" cx="45.537" cy="67.85" r="2.789"/>
 </svg>

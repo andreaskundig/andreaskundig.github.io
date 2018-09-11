@@ -50,17 +50,31 @@
          bottom: 47px;
          width: 100%;
          top: 0px;
+         text-align:center;
+         white-space: nowrap; 
      }
+     /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+.vertical-helper {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+     
      #gif-parent > img{
+  vertical-align: middle;
          width: auto; 
-         height: 100%;
+         height: auto;
+         max-width: 100%;
+         max-height: 100%;
+         margin:auto;
      }
      .footer {
          position: absolute;
          height: 47px;
          width: 100%;
          bottom: 0px;
-         border-top: 1px solid #606060;
+         border-top: 1px solid #bbbbbb;
          z-index: 100;
      }
      .menu > div.footer {
@@ -73,7 +87,7 @@
          margin: 10px 20px;
          /* left: 20px;
             bottom: 10px; */
-         color: rgba(170,170,170,0.4);
+         color: #bbbbbb;
      }
      .author {
          font-weight: bold;
@@ -185,13 +199,16 @@
    }
    div.menu-grid > div> div.padding-2 {
        height: 4%;
-   }
+     }
+
    div.menu-grid > div> div > img {
        max-height:100%;
        max-width: 100%;
        /* width: auto;
           height: auto; */
        }
+
+
      
    .emphasized {
        font-weight: bold;
@@ -215,6 +232,7 @@
     <div id="canvas-parent"><canvas id="main-canvas"></canvas>
     </div>
     <div id="gif-parent">
+      <span class="vertical-helper"></span>
       <img >
       <!-- <img src="animations/bdfil2018/Andreas-Kundig__Breakdance-rate_1366_961.gif"> -->
     </div>

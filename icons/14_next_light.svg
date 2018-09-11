@@ -11,21 +11,21 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_45_"  overflow="visible"/>
 	</clipPath>
-	<use xlink:href="#SVGID_45_"  overflow="visible" fill="none" stroke="#606060" stroke-width="2" stroke-miterlimit="10"/>
+	<use xlink:href="#SVGID_45_"  overflow="visible" fill="none" stroke="#bbbbbb" stroke-width="2" stroke-miterlimit="10"/>
 </g>
 <g>
 	<g>
 		<g>
-			<path fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M72.933,56.692"/>
+			<path fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M72.933,56.692"/>
 			<g>
 				
-					<line fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="72.138" y1="56.692" x2="61.489" y2="45.455"/>
+					<line fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="72.138" y1="56.692" x2="61.489" y2="45.455"/>
 				
-					<line fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="61.489" y1="67.93" x2="72.138" y2="56.692"/>
+					<line fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="61.489" y1="67.93" x2="72.138" y2="56.692"/>
 			</g>
 		</g>
 	</g>
 	
-		<line fill="none" stroke="#606060" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="72.138" y1="56.692" x2="40.454" y2="56.692"/>
+		<line fill="none" stroke="#bbbbbb" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="72.138" y1="56.692" x2="40.454" y2="56.692"/>
 </g>
 </svg>
