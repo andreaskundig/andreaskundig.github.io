@@ -1,0 +1,1 @@
+load({"width":1024,"height":1286.33,"speed":1,"lineData":[{"start":1537016558430,"last":484,"beat":1000,"lifetime":500,"color":"#FFEB3B","multiPeriod":1,"strokeWidth":20,"times":[0,72,75,136,216,277,345,416,478],"segments":[[118,658],[158,659],[221,658],[301,647],[572,606],[730,597],[843,598],[946,601],[981,601]]}],"backgroundColor":"rgb(0,0,0)"});
