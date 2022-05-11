@@ -202,10 +202,10 @@
      
    .emphasized {
        font-weight: bold;
-   }</style><script src="lib/paper-core.js"></script><script>var config =
-                    {loaders: [
-                     {constr: 'list', name: 'bdfil2018', selection:'artistes'},
-                     {decorator: 'autoPlay', period: 6000, pause: 20000}],
-                     gifResolution: '_1136_800',
-                     menu: 'new',
-                     save:false};</script><script defer="defer" src="bundle-gallery.js"></script></head><body><div id="canvas-parent"><canvas id="main-canvas"></canvas></div><div id="gif-parent"><span class="vertical-helper"></span> <img></div><div id="footer" class="footer"><div id="animation-name"></div><div id="navigation" class="hidden"><div id="bt-previous"><img src="icons/13_previous_light.svg"></div><div id="bt-next"><img src="icons/14_next_light.svg"></div><div id="bt-menu"><img src="icons/15_gallery_light.svg"></div><div id="bt-bouboucle"><img src="icons/16_draw_light.svg"></div><button id="bt-save"><i class="fa fa-floppy-o" aria-hidden="true"></i></button></div></div><div id="menu" class="hidden"><div id="animations"></div><div class="footer"><div id="menu-navigation"><div id="bt-menu-previous"><img src="icons/13_previous_light.svg"></div><div id="bt-menu-next"><img src="icons/14_next_light.svg"></div><div id="bt-menu-bouboucle"><img src="icons/16_draw_light.svg"></div></div></div></div></body></html>
+   }</style><script src="lib/paper-core.js"></script><script>var config = {
+              loaders:[
+               {constr: 'directory', name: 'saved'},
+               {decorator: 'highPriority',
+                loader: {constr: 'autosave'}},
+               {decorator: 'reloadPage', count: 8},
+               {decorator: 'autoPlay', pause: 0}]};</script><script defer="defer" src="bundle-gallery.js"></script></head><body><div id="canvas-parent"><canvas id="main-canvas"></canvas></div><div id="gif-parent"><span class="vertical-helper"></span> <img></div><div id="footer" class="footer"><div id="animation-name"></div><div id="navigation" class="hidden"><div id="bt-previous"><img src="icons/13_previous_light.svg"></div><div id="bt-next"><img src="icons/14_next_light.svg"></div><div id="bt-menu"><img src="icons/15_gallery_light.svg"></div><div id="bt-bouboucle"><img src="icons/16_draw_light.svg"></div><button id="bt-save"><i class="fa fa-floppy-o" aria-hidden="true"></i></button></div></div><div id="menu" class="hidden"><div id="animations"></div><div class="footer"><div id="menu-navigation"><div id="bt-menu-previous"><img src="icons/13_previous_light.svg"></div><div id="bt-menu-next"><img src="icons/14_next_light.svg"></div><div id="bt-menu-bouboucle"><img src="icons/16_draw_light.svg"></div></div></div></div></body></html>

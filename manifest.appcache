@@ -4,13 +4,7 @@ CACHE MANIFEST
 js/fumetto-export-info-ui.js
 js/simple-ui.js
 lib/paper-core.js
-js/urlUtils.js
-js/actions.js
 js/ajax.js
-js/io.js
-js/makeLine.js
-js/makeTimeKeeper.js
-js/makeLooper.js
 simple.css
 simple-ipad.css
 icons/2_taille_1.svg
