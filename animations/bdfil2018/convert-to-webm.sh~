@@ -1,0 +1,6 @@
+ ffmpeg -f gif -i Nico-Fremz__Fremzy_1136_800.gif -b:v 0 -crf 30 -pass 1 -an -f webm NULL
+ ffmpeg -f gif -i Nico-Fremz__Fremzy_1136_800.gif -b:v 0 -crf 30 -pass 2 Nico-Fremz__Fremzy_1136_800-l.webm -y
+
+for i in *.gif;
+do ffmpeg -f gif -i $i ${i%.*}.webm;
+done
